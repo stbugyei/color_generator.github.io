@@ -1,0 +1,440 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(202, 193, 193);
+    color: #000;
+    font-family: Inter, Arial, sans-serif, 'Times New Roman', Times, serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: auto;
+}
+
+.header {
+    position: relative;
+    font-size: 16px;
+    color: blanchedalmond;
+    text-align: center;
+    max-width: 100%;
+    padding: 5px 0px;
+    background-color: rgb(5, 5, 5);
+}
+
+.popup {
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+}
+
+p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-kerning: unset;
+}
+
+
+/* mediaquery*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header {
+        width: 100%;
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+.search {
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+    margin: 1.1vw;
+    border-radius: 10px;
+}
+
+
+/* mediaquery*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .search {
+        width: 70%;
+        padding: 10px;
+        font-size: 10px;
+    }
+}
+
+.header_text {
+    color: blanchedalmond;
+    text-align: center;
+    margin: 5px;
+}
+
+
+/* mediaquery*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header_text {
+        color: rgb(245, 244, 243);
+        margin: 10px;
+    }
+}
+
+.italic_bold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.normal {
+    color: rgb(98, 95, 95);
+}
+
+.sub_heading {
+    color: rgb(184, 173, 173);
+}
+
+.gray {
+    color: rgb(184, 173, 173);
+}
+
+
+/*================Buttons==============*/
+
+.btn_btn--generate {
+    box-shadow: inset 0px 0px 0px 2px #9fb4f2;
+    background: linear-gradient(to bottom, #1b076a 5%, #0f0929 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    padding: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/* mediaquery*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .btn_btn--generate {
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+        margin: 4px 2px;
+    }
+}
+
+.btn_btn--stop {
+    box-shadow: inset 0px 0px 0px 2px #9fb4f2;
+    background: linear-gradient(to bottom, #5f0e1f 5%, #cc424d 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/* mediaquery*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .btn_btn--stop {
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+        margin: 4px 2px;
+    }
+}
+
+.btn_copy {
+    box-shadow: inset 0px 0px 0px 2px #9fb4f2;
+    background: linear-gradient(to bottom, #7892c2 5%, #1b076a 100%);
+    border: 1px solid #4e6096;
+    border-radius: 2%;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 4px 30px;
+    margin: 4px 2px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+}
+
+
+/* mediaquery*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .btn_copy {
+        margin: 12px 12px;
+    }
+}
+
+.btn_copy:hover {
+    background-color: #020913;
+}
+
+.btn_copy:active {
+    position: relative;
+    top: 1px;
+}
+
+
+/*================container_first==============*/
+
+.container_first {
+    max-width: 100%;
+    margin: 50px;
+    padding: 0px 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* mediaquery*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container_first {
+        max-width: 100%;
+        /*margin: 12px; */
+        padding: 0px 5px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container_first {
+        padding: 0px 2px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.container_first_item {
+    width: 19%;
+    line-height: 6.0rem;
+    text-align: center;
+    margin: 5px;
+    box-shadow: inset 0px 0px 0px 2px #040d29;
+    border: 1px solid #040d29;
+}
+
+
+/* mediaquery*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container_first_item {
+        width: 90%;
+        line-height: 3.5rem;
+        margin: 5px;
+        padding: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container_first_item {
+        width: 90%;
+        line-height: 3.5rem;
+        margin: -1px;
+        padding: 34px;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #040d29;
+    }
+}
+
+.container_first--text {
+    font-size: 2rem;
+    color: rgb(7, 6, 6);
+    padding: 40px;
+}
+
+
+/* mediaquery*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container_first--text {
+        font-size: 0.5rem;
+        padding: 6px;
+    }
+}
+
+
+/* mediaquery*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container_first--text {
+        font-size: 0.5rem;
+        padding: 6px;
+    }
+}
+
+
+/*=============================footer===========================*/
+
+.footer_bottom {
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom_text {
+    padding: 20px;
+    margin: 30px;
+}
+
+
+/* mediaquery*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .bottom_text {
+        padding: 1px;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .normal {
+        font-size: 10px;
+    }
+}
+
+.bottom_icons {
+    width: 0px;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+/*mediaquery*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .bottom_icons {
+        width: 45px;
+        position: relative;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .bottom_icons {
+        width: 45px;
+        position: relative;
+        margin-top: 30px;
+    }
+}
+
+.tweeter,
+.facebook,
+.vimeo,
+.linkedin,
+.github,
+.pinterest {
+    background-color: rgb(148, 136, 197);
+    display: none;
+    position: absolute;
+    bottom: 85px;
+    left: 20px;
+    padding: 10px;
+}
+
+.bottom_icons:hover::after {
+    content: "";
+    position: absolute;
+    margin-left: 20px;
+    top: -15px;
+    width: 0;
+    height: 0;
+    border-top: 11px solid rgb(148, 136, 197);
+    border-right: 14px solid transparent;
+}
+
+.bottom_icons:hover .vimeo,
+.bottom_icons:hover .facebook,
+.bottom_icons:hover .github,
+.bottom_icons:hover .linkedin,
+.bottom_icons:hover .pinterest,
+.bottom_icons:hover .tweeter {
+    display: block;
+}
+
+.footer_bottom--subimg {
+    width: 30px;
+}
+
+.footer_bottom--subimg1 {
+    width: 70%;
+}
+
+.icon_group {
+    position: relative;
+    width: 13%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .icon_group {
+        position: relative;
+        width: 65%;
+    }
+    .footer_bottom--subimg1 {
+        display: none;
+        width: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .icon_group {
+        position: relative;
+        width: 40%;
+        display: flex;
+    }
+}
+
+.up_arrow {
+    width: 70px;
+    margin: 30px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .up_arrow {
+        display: none;
+        width: 0px;
+        margin: 0px;
+    }
+}
