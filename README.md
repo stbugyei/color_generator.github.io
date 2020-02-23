@@ -1,2 +1,1 @@
-# color_generator
- hexacolor generator
+https://stbugyei.github.io/color_generator.github.io/
